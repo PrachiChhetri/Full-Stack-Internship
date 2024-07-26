@@ -1,0 +1,66 @@
+body{
+    background-image: url(bg.JPG);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.a{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: dashed;
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Maiandra GD';
+}
+
+ul {
+    font-family: 'Maiandra GD';
+    word-spacing: 230px;
+    font-size: larger;
+  }
+  
+  li {
+    display: inline;
+    color: whitesmoke;
+  }
+  
+  p{
+    color: beige;
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: wavy;
+    font-size: x-large;
+    left: 100px;
+  }
+
+h1{
+  font-family: 'Maiandra GD';
+  text-align: justify;
+  color: beige;
+  font-size: x-large;
+}
+
+img{
+  border-radius: 80%;
+  display: block;
+  padding: 20px;
+}
+
+.b{
+  font-size: 100px;
+  float: right;
+  text-align: center;
+}
+a:hover{
+  color:blue;
+}
+
+a:active{
+  color:red;
+}
+
+.c{
+  font-size: 30px;
+}
