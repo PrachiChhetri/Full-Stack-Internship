@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prachi - Full Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(73, 26, 65);
+            color: white;
+            font-family: "Roboto Slab", serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(45, 27, 45);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        nav ul li a:hover{
+            color: rgb(170, 107, 208);
+            font-size: 1.5rem;
+        }
+
+        .left{
+            font-size: 1.8rem;
+        }
+
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+
+        }
+
+        .first div{
+            width: 30%;
+            align-items: center;
+        }
+
+        .leftsection{
+            margin: 79px 0px 0px 0px;
+            font-size: xx-large;
+            font-family: "Roboto Slab", serif;
+        }
+
+        .rightsection img{
+           margin: -19px 0px 0 -30px;
+        }
+
+        .purple{
+            color: rgb(170, 107, 208);
+            font-family: "Roboto Slab", serif;
+            font-size: xx-large;
+        }
+
+        #element{
+            color: rgb(170, 107, 208);
+        }
+    
+        main hr{
+            border: 0;
+            background-color: rgb(170, 107, 208);
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+
+        .second{
+            margin: -20px 0px 0px 105px;
+            height: 70vh;
+        }
+
+        .second h3{
+            color: gray;
+            font-size: small;
+            margin: -20px 0 0 10px;
+            } 
+
+        .second .box{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 45px 0;
+            display: flex;
+        }
+
+        .second .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: auto ;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;;
+        }
+
+        .vertical .vertical-heading{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            
+        }
+
+        .vertical .vertical-heading a{
+            text-decoration: none;
+            color: rgb(170, 107, 208);
+        }
+            
+        .vertical .vertical-heading a:hover{
+            color: azure;
+            font-size: larger;
+        }
+
+        footer{
+            background-color: rgb(45, 27, 45);
+            
+        }
+
+        .footer{
+            display: flex;
+            margin: -20px 0px 0px 105px;
+           
+        }
+
+        .footer-first{
+            font-size: 15px;
+        }
+
+        .footer-second{
+            margin:  60px 0 70px 160px; 
+        }
+        .footer-second a{
+            text-decoration: none;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .footer-second a:hover{
+            color: azure;
+            font-size: larger;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer-text-center{
+            margin: -19px 0 0px 536px;
+            align-items:  center;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachi's Portfolio</div>
+            <div class="right"></div>
+            <ul type="none">
+                <li><a href="Html+css+js.html">Home    </li></a>
+                <li><a href="#about">About   </li></a>
+                <li><a href="service.html" target="_blank">Services</li></a>
+                <li><a href="https://drive.google.com/file/d/1oc9_yoZJKZXv7j2mqaenvvMQtm-QHHdn/view?usp=sharing" target="_blank">Resume</li></a>
+                <li><a href="contact.html" target="_blank">Contact </li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hey, My Name is <span class="purple">Prachi</span> 
+                <div style=" width: 150%;">I am a passionate 
+                <div style="width: 150%;"><span id="element"></div> </span></div>
+            </div>
+            <div class="rightsection">
+                <img src="me.png" width="400" height="400">
+            </div>
+        </section>
+        <hr>
+
+        <section class="second" id="about">
+            <h3>What i have achieved</h3>
+          <h2>Achievements </h2>
+
+          <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="developer.png">
+                <div class="vertical-heading">
+                    <a href="https://drive.google.com/file/d/1Wsgwf_0Gl-JBfhqVHDoCrwuQ21MsxL0u/view?usp=drive_link.pdf" target="_blank">
+                         MySQL with Information Technology
+                    </a></div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer.png">
+                <div class="vertical-heading">
+                    <a href="https://drive.google.com/file/d/1Mp8XZ70kYRXQ19sgj4im8sfaThYn1C9v/view?usp=drive_link.pdf" target="_blank"> 
+                        Machine Learning with ChatGPT: Image Classification Model
+                    </a></div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer.png">
+                <div class="vertical-heading">
+                    <a href="https://drive.google.com/file/d/13Vto6zHTgWih-Yzj_vJXskNuuiFA-f3k/view?usp=drive_link.pdf" target="_blank">
+                         Introduction to Relational Database and SQL
+                    </a></div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Prachi Chhetri's Portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="Html+css+js.html">Home    </li></a>
+                    <li><a href="#about">About   </li></a>
+                    <li><a href="service.html">Services</li></a>
+                    <li><a href="https://drive.google.com/file/d/1oc9_yoZJKZXv7j2mqaenvvMQtm-QHHdn/view?usp=sharing" target="_blank">Resume</li></a>
+                    <li><a href="contact.html" target="_blank">Contact </li></a>
+                </ul>  
+            </div>
+
+            <div class="footer-second">
+                <ul>
+                    <li><a href="Html+css+js.html">Home    </li></a>
+                    <li><a href="#about">About   </li></a>
+                    <li><a href="service.html">Services</li></a>
+                    <li><a href="https://drive.google.com/file/d/1oc9_yoZJKZXv7j2mqaenvvMQtm-QHHdn/view?usp=sharing" target="_blank">Resume</li></a>
+                    <li><a href="contact.html" target="_blank">Contact </li></a>
+            </div>
+
+            <div class="footer-second">
+                <ul>
+                    <li><a href="Html+css+js.html">Home    </li></a>
+                    <li><a href="#about">About   </li></a>
+                    <li><a href="service.html">Services</li></a>
+                    <li><a href="https://drive.google.com/file/d/1oc9_yoZJKZXv7j2mqaenvvMQtm-QHHdn/view?usp=sharing" target="_blank">Resume</li></a>
+                    <li><a href="contact.html" target="_blank">Contact </li></a>
+            </div>
+      
+            <div class="footer-second">
+                <ul>
+                    <li><a href="Html+css+js.html">Home    </li></a>
+                    <li><a href="#about">About   </li></a>
+                    <li><a href="service.html">Services</li></a>
+                    <li><a href="https://drive.google.com/file/d/1oc9_yoZJKZXv7j2mqaenvvMQtm-QHHdn/view?usp=sharing" target="_blank">Resume</li></a>
+                    <li><a href="contact.html" target="_blank">Contact </li></a>
+            </div>
+            
+
+        </div>
+
+        <div class="footer-text-center"> Copyright 	&#169 prachichhetriportfolio.com | All rights Reserved</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer','Video Editor','Full-Stack Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form using javaScript</title>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let age = document.getElementById('age').value;
+            let gender = document.querySelector('input[name="gender"]:checked').value;
+            let hobbies = [];
+            let hobbyCheckboxes = document.querySelectorAll('input[name="hobbies"]:checked');
+            hobbyCheckboxes.forEach((checkbox) => {
+                hobbies.push(checkbox.value);
+            });
+            let message = document.getElementById('message').value;
+
+            let output = `
+                <h2>Form Data</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Age:</strong> ${age}</p>
+                <p><strong>Gender:</strong> ${gender}</p>
+                <p><strong>Hobbies:</strong> ${hobbies.join(', ')}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `;
+
+            document.open();
+            document.write(output);
+            document.close();
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center"><font face="cambria">My Form Using JavaScript</font></h1>
+    <form onsubmit="submitForm(event)" align="center">
+        <font face="cambria">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Traveling">
+        <label for="hobby2">Traveling</label><br>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Cooking">
+        <label for="hobby3">Cooking</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </font>
+</form>
+</body>
+</html>
